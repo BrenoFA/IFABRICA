@@ -1,3 +1,4 @@
+/* Estilo dpadrão das páginas */
 body {
     font-family: Arial, sans-serif;
     margin: 40px;
@@ -11,6 +12,7 @@ footer {
     margin-right: auto;
 }
 
+/* Estilo do botão de navegação */
 .botao-centralizado {
     text-align: center;
     margin-top: 20px;
