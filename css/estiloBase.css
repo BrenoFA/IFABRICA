@@ -1,0 +1,19 @@
+body {
+ font-family: Arial, sans-serif;
+ margin: 40px;
+}
+header, main, footer {
+ width: 80%;
+ margin-left: auto;
+ margin-right: auto;
+}
+.botao-centralizado {
+ text-align: center;
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+.botao-entrada {
+ padding: 10px 20px;
+ font-size: 16px;
+ cursor: default;
+}
