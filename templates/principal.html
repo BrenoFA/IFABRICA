@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <!-- BRENO FERREIRA AMORIM | 3º PERIODO | ADS -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,34 +17,53 @@
 
     <!-- Conteúdo da principal de toda a página. -->
     <main class="conteudo-principal">
-        <section class="painel">
-            <h2>Página Principal</h2>
-            <p>
-                Bem-vindo ao sistema da Fábrica de Peças.
+        <div class="painel">
+            <!-- Saudação. -->
+            <h2>Menu Principal</h2>
+            <p class="descricao">
+                Esta página representa a estrutura inicial de navegação do sistema da Fábrica de Peças.
             </p>
             <!-- Link com função de retorno. -->
+            <div class="menu-principal">
+
+                <!-- menu de Início. -->
+                <button class="item-menu"><a>Início</a></button>
+                
+                <!-- menu de Pedidos. -->
+                <button class="item-menu"><a>Pedidos</a></button>
+
+                <!-- menu de Estoque. -->
+                <button class="item-menu"><a>Estoque</a></button>
+                
+                <!-- menu de Qualidade. -->
+                <button class="item-menu"><a>Qualidade</a></button>
+
+                <!-- menu de Financeiro. -->
+                <button class="item-menu"><a>Financeiro</a></button>
+
+                <!-- menu de Administração. -->
+                <button class="item-menu"><a href="administracao.html">Administração</a></button>
+
+                <!-- menu de Compras. -->
+                <button class="item-menu"><a>Compras</a></button>
+
+                <!-- menu de Produção. -->
+                <button class="item-menu"><a>Produção</a></button>
+
+                <!-- menu de Envios. -->
+                <button class="item-menu"><a>Envios</a></button>
+
+                <!-- menu de Relatórios. -->
+                <button class="item-menu"><a>Relatórios</a></button>
+            </div>
+
+            <!-- Botão para voltar ao login -->
             <div class="botao-centralizado">
-                <a href="templateBase2.html" class="botao-entrada">
-                    Clique aqui para voltar à página anterior
+                <a href="login.html" class="botao-entrada">
+                    Clique aqui para voltar ao login
                 </a>
             </div>
-        </section>
-        <section class="menu">
-            <!-- menu de Núcleo Pessoa / Funcionário. -->
-            <a href="">Núcleo 1 - Funcionarios</a><br>
-
-            <!-- menu de Núcleo Produto / Roda. -->
-            <a href="">Núcleo 2 - Roda</a><br>
-
-            <!-- menu de Núcleo Fabricação. -->
-            <a href="">Núcleo 3 - Fabricação</a><br>
-
-             <!-- menu de Núcleo Processo de Produção. -->
-            <a href="">Núcleo 4 - Processo de Produção</a><br>
-
-             <!-- menu de Núcleo Insumos, Perdas e Custos. -->
-            <a href="">Núcleo 5 - Insumos, Perdas e Custos</a><br>
-        </section>
+        </div>
     </main>
     <!-- Rodapé simples da página. -->
     <footer class="rodape">
