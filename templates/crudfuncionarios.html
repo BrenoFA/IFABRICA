@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- CRUD FUNCIONARIOS- Sprint 3-->
+<!-- Breno Amorim -->
+<!-- Operações CRUD para o cadastro de funcionários -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Funcionários</title>
+  <link rel="stylesheet" href="../css/estiloBase.css">
+</head>
+
+<body>
+
+  <!-- Cabeçalho principal da página -->
+  <header class="cabecalho">
+    <h1>Sistema da Fábrica de Peças</h1>
+  </header>
+
+  <!-- Área principal do conteúdo -->
+  <main class="conteudo-principal">
+    <section class="painel">
+      <h2>CRUD Funcionários</h2>
+
+      <!-- Submenu CRUD Funcionarios -->
+
+      <div class="menu-principal">
+        <a href="#" class="item-menu">Novo Funcionário</a>
+        <a href="#" class="item-menu">Listar Funcionário</a>
+        <a href="#" class="item-menu">Editar Funcionário</a>
+        <a href="#" class="item-menu">Excluir Funcionário</a>
+      </div>
+
+      <!-- Listagem de Operadores Cadastrados -->
+      <section class="grupo-campo">
+        <h2>Operadores Cadastrados</h2>
+        {% for operador in operadores %}
+        <div>
+          <p><strong>Nome:</strong> {{ operador.get_nome() }}</p>
+          <p><strong>Máquina Atribuída:</strong> {{ operador.get_maquinaAtribuida() }}</p>
+          <p><strong>Função:</strong> {{ operador.exibir_papel() }}</p>
+        </div>
+        <hr>
+        {% endfor %}
+      </section>
+
+      <!-- Botão de retorno ao submenu de funcionários -->
+      <div class="area-voltar">
+        <a href="/funcionarios" class="botao-voltar">
+          Voltar para Submenu (Funcionários)
+        </a>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p>Programação II - IFRO - Desenvolvedor Breno Amorim</p>
+  </footer>
+
+</body>
+
+</html>

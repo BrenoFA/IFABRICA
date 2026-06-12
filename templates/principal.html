@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Página inicial do sistema - versão 4 -->
+<!-- Breno Amorim -->
+<!-- Página inicial do sistema - versão 4 com css -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+
+    <link rel="stylesheet" href="../css/estiloBase.css">
+</head>
+
+<body>
+    <!-- Cabeçalho principal da página. -->
+    <header class="cabecalho">
+        <h1>Sistema da Fábrica de Peças</h1>
+    </header>
+    <!-- Área principal do conteúdo da página. -->
+    <main class="conteudo-principal">
+        <p class="descricao">Bem-vindo, {{ usuario }}!</p>
+        <section class="menu-principal">
+
+            {% if 'principal' in menus %}
+            <a href="#" class="item-menu">Início</a>
+            {% endif %}
+
+            {% if 'admin' in menus %}
+            <a href="/admin" class="item-menu">Administração</a>
+            {% endif %}
+
+            <a href="#" class="item-menu">Pedidos</a>
+            <a href="#" class="item-menu">Compras</a>
+            <a href="#" class="item-menu">Estoque</a>
+
+            {% if 'producao' in menus %}
+            <a href="#" class="item-menu">Produção</a>
+            {% endif %}
+
+            <a href="#" class="item-menu">Qualidade</a>
+            <a href="#" class="item-menu">Expedição</a>
+            <a href="#" class="item-menu">Financeiro</a>
+            <a href="#" class="item-menu">Relatórios</a>
+
+        </section>
+
+        <!-- Botão para sair do sistema (logout) -->
+        <div class="area-voltar">
+            <a href="/logout" class="botao-voltar">
+                Sair
+            </a>
+        </div>
+
+    </main>
+    <!-- Rodapé simples da página. -->
+    <footer class="rodape">
+        <p>Programação II - IFRO - Desenvolvedor Breno Amorim</p>
+    </footer>
+
+</body>
+
+</html>

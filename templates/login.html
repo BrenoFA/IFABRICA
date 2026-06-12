@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Página inicial do sistema - versão 3 -->
+<!-- Breno Amorim -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>Login</title>
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/estiloBase.css') }}">-->
+    <link rel="stylesheet" href="../css/estiloBase.css">
+</head>
+
+<body>
+    <!-- Cabeçalho principal da página. -->
+    <header class="cabecalho">
+        <h1>Sistema da Fábrica de Peças</h1>
+    </header>
+    <!-- Área principal do conteúdo da página. -->
+    <main class="formulario-login">
+        <section class="grupo-campo">
+            <h2>Página de login</h2>
+            <p class="descricao">Esta página representa o login do sistema Fabricação de peças roda (Lego)</p>
+
+            {% if erro %}
+            <p style="color: red;">{{ erro }}</p>
+            {% endif %}
+
+            <form action="/" method="post">
+                <div><label for="usuario">Usuário:</label></div>
+                <input type="text" id="usuario" name="usuario" required minlength="3" autocomplete="username"> <br>
+                <div><label for="senha">Senha:</label></div>
+                <input type="password" id="senha" name="senha" required minlength="4" autocomplete="current-password"><br>
+                <div class="area-botao">
+                    <button type="submit" class="botao-entrada">
+                        Clique aqui para entrar
+                    </button>
+                </div>
+            </form>
+
+        </section>
+    </main>
+    <!-- Rodapé simples da página. -->
+    <footer class="rodape">
+        <p>Programação II - IFRO - Desenvolvedor Breno Amorim</p>
+    </footer>
+
+</body>
+
+</html>
