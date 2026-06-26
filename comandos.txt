@@ -1,0 +1,38 @@
+# IFABRICA
+Comandos utilizados para a criação geral do sistema:
+
+//Push para o Git
+------------------------
+git remote add origin https://github.com/BrenoFA/IFABRICA.git
+git branch -M main
+git push -u origin main
+------------------------
+
+// Criação de venv
+------------------------
+python -m venv env
+source env/bin/activate
+/Users/projts/env
+------------------------
+
+
+pytest test_integration.py
+pip install pytest-mock
+pip install readchar
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+pip install windows-curses
+https://www.geradorcpf.com – gerador de cpf para testes de programação
+pip install pytest pytest-benchmark
+
+
+-----------#------------
+ Inicialização do Flask
+-----------#------------
+pip install Flask
+import Flask as flask
+flas run
+------------------------
+
+
+pip install locust
+pylint --generate-rcfile > .pylintrc

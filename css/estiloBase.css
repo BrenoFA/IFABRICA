@@ -1,11 +1,6 @@
 @charset "UTF-8";
 
-/* Claudinei de Oliveira - estiloBase.css - UTF-8 - br */
-/* Geovane Alencar Silva */
-/* Estilos atualizados para a versao 1 do template base para o projeto */
-
-
-/* 0. Correcao global - box-sizing e reset de aparencia para Chrome, Edge e Safari */
+/* Breno Ferreira Amorim */
 *,
 *::before,
 *::after {
@@ -129,7 +124,7 @@ body {
     color: white;
     border-radius: 5px;
     font-weight: bold;
-    cursor: pointer;
+    cursor: default;
 }
 
 
@@ -157,10 +152,8 @@ body {
     color: white;
     border-radius: 5px;
     text-decoration: none;
-    cursor: pointer;
-    
+    cursor: default;
 }
-
 
 /* 7. Menu principal do arquivo principal.html */
 .menu-principal {
@@ -171,34 +164,36 @@ body {
     margin-bottom: 30px;
 }
 
-
 /* Cada item visual do menu principal */
 .item-menu {
     display: block;
     padding: 14px;
-    background-color: #e9eef3;
     color: #1f2d3d;
+    background-color: #c8d5e2;
     text-decoration: none;
     border: 1px solid #cfd8dc;
     border-radius: 6px;
     text-align: center;
     font-weight: bold;
-    cursor: pointer;
+    cursor: default;
 }
 
+/* Visual definido para <a> */
+a{
+    text-decoration: none;
+    color: #1f2d3d;
+}
 
 /* Efeito visual simples ao passar o mouse */
 .item-menu:hover {
     background-color: #dce6ef;
 }
 
-
 /* 8. Area de retorno */
 .area-voltar {
     text-align: center;
     margin-top: 25px;
 }
-
 
 /* Botao de retorno */
 .botao-voltar {
@@ -209,9 +204,7 @@ body {
     text-decoration: none;
     border-radius: 6px;
     font-weight: bold;
-    cursor: pointer;
 }
-
 
 /* 9. Rodape */
 /* width e margin centralizam o rodape alinhado ao cabecalho e conteudo */
